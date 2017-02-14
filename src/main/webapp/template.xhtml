@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<!--<h:outputStylesheet name="css/home.css"/>-->
+	<meta name="viewport" content="width=device-width" />
+	<h:outputStylesheet library="css" name="general.css" />
+	<title>Ranking</title>
+</h:head>
+<h:body>
+	<h:form id="form">
+		<div id="page">
+			<div id="top" class="top">
+				<p:menubar>
+					<p:submenu label="Wiecej">
+						<p:menuitem value="Technologia" outcome="/views/technology" />
+						<p:menuitem value="Skórka" outcome="/views/advanced" />
+						<p:menuitem value="Kalendarz" outcome="/views/schedule" />
+					</p:submenu>
+					<p:menuitem value="Projekty" outcome="/views/projects"/>
+					<p:menuitem value="Doświadczenie" outcome="/views/experience" />
+					<p:menuitem value="Wyślij e-mail" outcome="/views/contact" />
+					<p:menuitem value="O mnie" outcome="/views/about"
+						icon="ui-icon-star" />
+				</p:menubar>
+			</div>
+			<div id="bottom" class="bottom">
+				<p:layout style="height:1024px;">
+					<p:layoutUnit position="center">
+						<div id="content" class="center_content">
+							<ui:insert name="content">Content</ui:insert>
+						</div>
+					</p:layoutUnit>
+				</p:layout>
+			</div>
+		</div>
+	</h:form>
+</h:body>
+</html>
